@@ -23,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/student','App\Http\Controllers\ApiController@create');
 Route::get('/students/data', 'App\Http\Controllers\ApiController@show');
 Route::get('/student/{id}', 'App\Http\Controllers\ApiController@showbyid');
+Route::put('/update/{id}','App\Http\Controllers\ApiController@updatebyid');

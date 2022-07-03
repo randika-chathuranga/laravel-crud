@@ -18,4 +18,16 @@ class ApiController extends Controller
         $students->save();
         return response()->json($students);
     }
+
+
+    public function show(){
+        $students = Student::all();
+        return response()->json($students);
+    }
+
+
+    public function showbyid($id){
+        $students = Student::find($id);
+        return response()->json($students);
+    }
 }

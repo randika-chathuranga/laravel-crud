@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Listing;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpFoundation\RequestStack;
@@ -15,28 +16,8 @@ use Symfony\Component\HttpFoundation\RequestStack;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome', [
-        'heading' => 'this is first page',
-        'listings' => [
-           [
-            'name' => "randika",
-            'address'=> 'pinnaduwa'
-           ],
-
-           [
-            'name' => "chathuranga",
-            'address'=> 'galle'
-           ]
-        ]
-
-    ]);
-});
-
-// Route::get('/post/{id}', function($id){
-//     return response('post'.$id);
-// });
-
-
+ Route::get('/', function () {
+    return view('welcome');
+ });
 
 

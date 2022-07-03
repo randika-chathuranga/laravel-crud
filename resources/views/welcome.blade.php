@@ -7,10 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    {{$heading}}
-
-    @foreach ($listings as $listing)
-        <h2>{{$listing['name']}}</h2>
-    @endforeach
+    <h1>Randika</h1>
 </body>
 </html>
